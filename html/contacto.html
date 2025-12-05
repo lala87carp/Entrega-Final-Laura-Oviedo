@@ -1,0 +1,75 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"> <!--permite que todos los navegadores muestren correctamente texto de cualquier idioma-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--para el diseño responsivo, le dice al navegador como controlar las escalas y proporciones-->
+        
+        <!--Para el SEO-->
+        <title>Nuevos Aires</title>
+        <meta name="description" content="Nuevos Aires, ofrece prendas únicas, con diseño propio. Todo hecho con amor y propósito.">
+        <!-- Open Graph sirve para controlar como se muestra el contenido en redes tengo que estudiarlo antes de aplicarlo-->
+
+        <!--Favicon-->
+        <link rel="icon" href="../images/nuevos aires - tienda nube - favicon.png">
+
+        <!--CSS-->
+        <link rel="stylesheet" href="../css/style.css">
+
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <!--Iconos-->
+        <script src="https://kit.fontawesome.com/ba6be1c019.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <header>
+            <p class="header-logo">
+                <a href="../index.html"><img src="../images/nuevos aires - tool kit_logo head web.png"></a>
+            </p>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="#">PRODUCTOS</a></li>
+                    <li><a href="./html/contacto.html">CONTACTO</a></li>
+                    <li><a href="./html/carrito.hmtl" class="carrito-icono"><i class="fa-solid fa-basket-shopping"></i><span id="contador-carrito">0</span></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="contacto" >
+            <h2>¿Querés contactarte con nosotros?</h2>
+            <form class="formulario-contacto" action="https://formspree.io/f/xyzddabd" method="POST">
+                <div class="grupo-input">
+                    <label>
+                        Tu email:
+                        <input type="email" name="email">
+                    </label>
+                </div>
+                <div class="grupo-input">
+                    <label>
+                        Tu mensaje:
+                        <textarea name="message"></textarea>
+                    </label>
+                </div>
+            <button class="btn" type="submit">Enviar</button>
+
+            </form>
+            </section>
+        </main>
+        <footer>
+            <section class="contenedor">
+                <p class="header-logo">
+                    <a href="../index.html"><img src="../images/nuevos aires - tool kit_logo head web.png"></a>
+                </p>
+                <ul class="iconos-redes">
+                    <li class="icono-red-social"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="icono-red-social"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li class="icono-red-social"><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                </ul>
+            </section>
+            <h5 class="registrado-footer">© 2025 - Diseñado por: Laura Oviedo. Todos los derechos reservados.</h5>
+        </footer>
+    </body>
+</html>
