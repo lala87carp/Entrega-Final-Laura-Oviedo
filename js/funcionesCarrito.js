@@ -1,6 +1,6 @@
 import{guardarCarrito, obtenerCarrito, vaciarCarrito} from "./storage.js";
 
-import{actualizarContador, actualizarContador, mostrarMensaje } from "./ui.js";
+import{actualizarContador, mostrarMensaje } from "./ui.js";
 
 export const agregarAlCarrito = (producto) => {
     const carrito = obtenerCarrito();

@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const carrito = obtenerCarrito();
     actualizarContador(carrito);
 
-    fetch("../data/productos.json")
+    fetch("./data/productos.json")
     .then((res) => {
         if(!res.ok) {
-            throw new Error ('Error HTTP status: ${res.status}')
+            throw new Error(`Error HTTP status: ${res.status}`);
         }
 
         return res.json();
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const img = document.createElement("img")
             img.alt = producto.nombre
-            img.src = `../images/${producto.img}`;
+            img.src = `./${producto.img}`;
 
             const titulo = document.createElement("h3")
             titulo.textContent = producto.nombre
