@@ -6,6 +6,11 @@
 /*BODY*/
 body {
     font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 /*HEADER*/
